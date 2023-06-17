@@ -57,35 +57,15 @@ function addWordToList(word) {
 }
 
 function restart(){
+  timetext.innerHTML = 10;
   clearInterval(timer);
   previousWord = '';
   wordList.innerHTML = '';
   document.getElementById('input-word').value = '';
   message.textContent = '';
   score = 0;
-  time = 0;
-  timetext.innerHTML = time;
-  initialiseTimer(time);
+  time = 10;
+ 
+  //initialiseTimer(time);
   //document.getElementById('word-list').style.display = 'none';
-}
-
-const buttonGroup = document.getElementById("button-group");
-const buttonGroupPressed = e => {
-  // element.display.style = 'none';
-  const isButton = e.target.nodeName === 'BUTTON';
-
-  if (!isButton) {
-    return
-  }
-
-  elementvalue = e.target.id;
-  if (elementvalue == "1") {
-    ans = 1;
-  }
-  else if (elementvalue == "2") {
-    ans = 2;
-  }
-  else if (elementvalue == "3") {
-    ans = 3;
-  }
 }
