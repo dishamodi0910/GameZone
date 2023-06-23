@@ -5,16 +5,17 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1>Word Chain Game</h1>
-  <div id="word-chain">
-    <input type="text" id="input-word" placeholder="Enter a word">
-    <button onclick="playTurn()">Play</button>
-    <p id="message"></p>
-    <button type="button" onclick="restart()">Restart</button>
-    <p>Time : <span id="time">10</span> seconds</p>
-    <ul id="word-list"></ul>
+  <div class="game">
+    <h1>Word Chain Game</h1>
+    <div id="word-chain">
+      <input type="text" id="input-word" placeholder="Enter a word">
+      <button onclick="playTurn()" id="play-btn">Play</button>
+      <p id="message"></p>
+      <button type="button" onclick="restart()" id="restart-btn">Restart</button>
+      <p>Time : <span id="time"><b>10</b></span> seconds</p>
+      <ul id="word-list"></ul>
+    </div>  
   </div>
-  
   <script src="script.js"></script>
 </body>
 </html>

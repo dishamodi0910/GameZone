@@ -1,37 +1,63 @@
 body {
     text-align: center;
-  }
-  
-  h1 {
+    background: black
+}
+
+.game{
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 500px;
+}
+
+#restart-btn{
+  width: 30%;
+  height : 30%;
+  text-align: center;
+  font-size: larger;
+  border-radius: 5px;
+  background-color: #4CAF50;
+}
+
+#restart-btn:hover{
+  background-color: #3e8e41;
+}
+
+#play-btn{
+  font-size: larger;
+  border-radius: 5px;
+  background-color: #4CAF50;
+}
+
+#play-btn:hover{
+  background-color: #3e8e41;
+}
+
+h1 {
     color: #333;
-  }
-  
-  #word-chain {
+}
+#word-chain {
     margin-top: 50px;
-  }
-  
-  #input-word {
+}
+#input-word {
     padding: 5px;
     font-size: 16px;
-  }
-  
-  #message {
+    width: 400px;
+}
+#message {
     margin-top: 10px;
     color: #FF0000;
     font-weight: bold;
-  }
-  
-  #word-list {
+}
+#word-list {
     list-style-type: none;
     padding: 0;
     margin-top: 20px;
-  }
-  
-  #word-list li {
+}
+#word-list li {
     display: inline-block;
     margin: 5px;
     padding: 5px;
-    background-color: #EEE;
+    background-color: #392d2d;
     border-radius: 3px;
-  }
-  
+    color: bisque;
+}

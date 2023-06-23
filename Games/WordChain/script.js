@@ -13,7 +13,7 @@ const initialiseTimer = (time) => {
     } 
     if (time > 0) {
       time--;
-      timetext.innerHTML = time;
+      timetext.innerHTML = `<b>${time}</b>`;
       //document.getElementsByClassName('container')[0].style.display = 'block'
     }
   }, 1000);
@@ -22,7 +22,7 @@ function playTurn() {
   const inputWord = document.getElementById('input-word').value;
   clearInterval(timer);
   initialiseTimer(time);
-  timetext.innerHTML = time;
+  timetext.innerHTML = `<b>${time}</b>`;
   if (inputWord === '') {
     message.textContent = 'Please enter a word.';
     return;
@@ -57,7 +57,7 @@ function addWordToList(word) {
 }
 
 function restart(){
-  timetext.innerHTML = 10;
+  timetext.innerHTML = `<b>10</b>`;
   clearInterval(timer);
   previousWord = '';
   wordList.innerHTML = '';
@@ -65,7 +65,4 @@ function restart(){
   message.textContent = '';
   score = 0;
   time = 10;
- 
-  //initialiseTimer(time);
-  //document.getElementById('word-list').style.display = 'none';
 }
